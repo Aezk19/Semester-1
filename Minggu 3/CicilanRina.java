@@ -8,9 +8,10 @@ public class CicilanRina {
         int uangMuka;
         int sisaHarga;
         int bulan;
-        double cicilanPerBulan;
+        double bunga=0.02;
+        double cicilanPerbulan;
 
-        System.out.println("Masukkan harga");
+        System.out.println("Masukkan harga laptop");
         harga = sc.nextInt();
         System.out.println("Masukkan uang muka");
         uangMuka = sc.nextInt();
@@ -18,8 +19,8 @@ public class CicilanRina {
         bulan = sc.nextByte();
 
         sisaHarga = harga-uangMuka;
-        cicilanPerBulan = sisaHarga/bulan+sisaHarga*0.02;
+        cicilanPerbulan = sisaHarga/bulan+sisaHarga*bunga;
         
-        System.out.println("Cicilan yang harus dibayar Rina setiap bulan adalah " + cicilanPerBulan);
+        System.out.println("Cicilan yang harus dibayar Rina setiap bulan adalah " + cicilanPerbulan);
     }
 }

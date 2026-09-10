@@ -5,15 +5,15 @@ public class BiayaCetakDokumen {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int lembarDokumen;
+        int jumlahLembar;
         int biayaCetak=500;
-        int penjilidan=5000;
+        int biayaPenjilidan=5000;
         int totalBiaya;
 
         System.out.println("Masukkan jumlah lembar dokumen yang akan dicetak");
-        lembarDokumen = sc.nextInt();
+        jumlahLembar = sc.nextInt();
 
-        totalBiaya = lembarDokumen*biayaCetak+penjilidan;
+        totalBiaya = jumlahLembar*biayaCetak+biayaPenjilidan;
         System.out.println("Total biaya yang harus dibayar adalah " + totalBiaya);
     }
 }
